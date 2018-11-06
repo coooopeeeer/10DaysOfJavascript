@@ -37,10 +37,10 @@ function getLetter(s) {
             letter = "C";
             break;
 
-        case "n" || "p" || "q" || "r" || "s" || "t" || "v" || "w" || "x" || "y" || "z" :
+        default:
             letter = "D";
             break;
     }
     console.log(letter);
 }
-getLetter("adfgt");
+getLetter("dwxya");

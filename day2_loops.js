@@ -1,31 +1,28 @@
 /*
-    Day2: Conditional Statements: If-Else
+    Day2: Loops
 
-    Complete the getGrade(score) function in the editor.
-    It has one parameter: an integer, score, denoting the number of points Julia earned on an exam.
-    It must return the letter corresponding to her grade according to the following rules:
+    Complete the vowelsAndConsonants function in the editor below.
+    It has one parameter, a string, s, consisting of lowercase English alphabetic letters (i.e., a through z).
+    The function must do the following:
 
-    ・If 25 < score <= 30, then grade = A.
+    1. First, print each vowel in s on a new line.
+       The English vowels are a, e, i, o, and u, and each vowel must be printed in the same order as it appeared in s.
 
-    ・If 20 < score <= 25, then grade = B.
-
-    ・If 15 < score <= 20, then grade = C.
-
-    ・If 10 < score <= 15, then grade = D.
-
-    ・If 5 < score <= 10, then grade = E.
-
-    ・If 0 <= score <= 5, then grade = F.
+    2. Second, print each consonant (i.e., non-vowel) in s on a new line in the same order as it appeared in s.
 */
 
 'use strict';
 
 function vowelsAndConsonants(s) {
     let vowels = ["a", "e", "i", "o", "u"];
-    let consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"];
     for (let i = 0; i < s.length; i++) {
-        if (vowels.indexOf(s[i])) {
+        if (vowels.indexOf(s[i]) > -1) {
             console.log(s[i]);
+        }
+    }
+    for (let j = 0; j < s.length; j++) {
+        if (vowels.indexOf(s[j]) < 0) {
+            console.log(s[j]);
         }
     }
 }

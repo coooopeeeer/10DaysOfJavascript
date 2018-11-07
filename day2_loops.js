@@ -23,10 +23,10 @@
 function vowelsAndConsonants(s) {
     let vowels = ["a", "e", "i", "o", "u"];
     let consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"];
-    let vowel;
-    for (let i = 0; i < vowels.length; i++) {
-        vowel = s.indexOf(vowels[i]);
+    for (let i = 0; i < s.length; i++) {
+        if (vowels.indexOf(s[i])) {
+            console.log(s[i]);
+        }
     }
-    console.log(vowel);
 }
 vowelsAndConsonants("javascriptloops");
